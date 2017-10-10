@@ -15,11 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from g1_lpc.views import UserViewSet, AgendaViewSet, CompromissoViewSet, ConviteViewSet
 from rest_framework import routers, serializers, viewsets
-from g1_lpc.views import UserViewSet
 
 router = routers.DefaultRouter()
-router.register(r'users', UserViewSet)
+router.register(r'Users', UserViewSet),
+router.register(r'Agenda', AgendaViewSet),
+router.register(r'Compromisso', CompromissoViewSet),
+router.register(r'Convite', ConviteViewSet),
 
 urlpatterns = [
     url(r'^', include(router.urls)),

@@ -15,5 +15,5 @@ admin.site.register(Agenda)
 from .models import Convite
 admin.site.register(Convite)
 
-from .models import Resposta_Convite
-admin.site.register(Resposta_Convite)
+##from .models import Resposta_Convite
+##admin.site.register(Resposta_Convite)

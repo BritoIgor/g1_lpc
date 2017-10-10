@@ -1,6 +1,4 @@
 from django.db import models
-
-from django.db import models
 from django.utils import timezone
 
 
@@ -44,6 +42,6 @@ class Convite(models.Model):
     def __str__(self):
         return self.msg
 
-class Resposta_Convite(models.Model):
-    convidado = models.ForeignKey('Convite')
-    aceite = models.BooleanField('aceite')
+##class Resposta_Convite(models.Model):
+##    convidado = models.ForeignKey('Convite')
+##    aceite = models.BooleanField('aceite')
